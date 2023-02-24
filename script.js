@@ -16,7 +16,6 @@ const values = {
 options.forEach((option) => {
    option.addEventListener("change", () => {
       if (document.querySelectorAll("input:checked").length == 1) {
-         console.log(document.querySelector("input:checked").parentElement)
          document
             .querySelector("input:checked")
             .parentElement.classList.add("disabled")
