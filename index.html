@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <title>Password generator</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="app-name">
+            <h3>Password generator</h3>
+         </div>
+         <div class="password-box">
+            <div class="wrapper">
+               <input
+                  type="text"
+                  class="pass-value"
+                  readonly
+               />
+               <i class="fa-regular fa-copy" title="click to copy"></i>
+            </div>
+         </div>
+         <div class="indicator-box">
+            <div></div>
+            <div class="indicator"></div>
+         </div>
+         <h2 class="settings-title">password settings</h2>
+         <div class="password-length-box">
+            <span class="pass-length-value">6</span>
+            <input
+               type="range"
+               class="pass-slider"
+               min="6"
+               max="32"
+               value="6"
+            />
+         </div>
+         <div class="settings">
+            <div class="lowercase">
+               <label>
+                  <input type="checkbox" id="lowercase" class="real-checkbox" />
+                  <span class="custom-checkbox"></span>
+                  Lowercase (a-z)
+               </label>
+            </div>
+            <div class="uppercase">
+               <label>
+                  <input type="checkbox" id="uppercase" class="real-checkbox" />
+                  <span class="custom-checkbox"></span>
+                  Uppercase (A-Z)
+               </label>
+            </div>
+            <div class="numbers">
+               <label>
+                  <input type="checkbox" id="numbers" class="real-checkbox" />
+                  <span class="custom-checkbox"></span>
+                  Numbers (0-9)
+               </label>
+            </div>
+            <div class="symbols">
+               <label>
+                  <input type="checkbox" id="symbols" class="real-checkbox" />
+                  <span class="custom-checkbox"></span>
+                  Special Symbols (&!|%#$)
+               </label>
+            </div>
+            <div class="btn-wrapper">
+               <button class="generete-btn">Generete password</button>
+            </div>
+         </div>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
